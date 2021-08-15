@@ -9,7 +9,7 @@ import 'impl.dart';
 class EasyWebView extends StatefulWidget implements EasyWebViewImpl {
   const EasyWebView({
     required this.src,
-    required this.onLoaded,
+    this.onLoaded,
     Key? key,
     this.height,
     this.width,
