@@ -11,7 +11,7 @@ class EasyWebView extends StatefulWidget implements EasyWebViewImpl {
   const EasyWebView({
     Key? key,
     required this.src,
-    required this.onLoaded,
+    this.onLoaded,
     this.height,
     this.width,
     this.webAllowFullScreen = true,
