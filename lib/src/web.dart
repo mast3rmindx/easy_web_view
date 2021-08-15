@@ -68,7 +68,7 @@ class EasyWebView extends StatefulWidget implements EasyWebViewImpl {
 class _EasyWebViewState extends State<EasyWebView> {
   @override
   void initState() {
-    widget.onLoaded();
+    widget.onLoaded?.call();
     WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
       final _iframe = _iframeElementMap[widget.key];
       _iframe?.onLoad.listen((event) {
